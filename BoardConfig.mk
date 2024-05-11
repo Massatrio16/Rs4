@@ -10,8 +10,7 @@ DEVICE_PATH := device/itel/S666LN
 TARGET_OTA_ASSERT_DEVICE := Itel-S666LN
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_S666LN
-TARGET_RECOVERY_DEVICE_MODULES := libinit_S666LN
+TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
 
 # TWRP Configs
 #
