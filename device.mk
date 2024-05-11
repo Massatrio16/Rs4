@@ -24,6 +24,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 
+
+LOCAL_PATH := device/itel/S666LN
+
 ENABLE_VIRTUAL_AB := true
 AB_OTA_UPDATER := true
 
