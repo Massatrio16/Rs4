@@ -26,7 +26,7 @@ void vendor_load_properties()
     {
         property_override(string("ro.product.") + prop + string("brand"), "Itel");
         property_override(string("ro.product.") + prop + string("name"), "S666LN");
-        property_override(string("ro.product.") + prop + string("device"), "Itel-S666LN");
+        property_override(string("ro.product.") + prop + string("device"), "S666LN");
         property_override(string("ro.product.") + prop + string("model"), "Itel S666LN");
         property_override(string("ro.product.") + prop + string("marketname"), "Itel RS4");
         property_override(string("ro.product.system.") + prop + string("device"), "Itel RS4");
