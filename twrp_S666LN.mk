@@ -12,7 +12,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Product Specifics
 PRODUCT_NAME := twrp_S666LN
-PRODUCT_DEVICE := Itel-S666LN
+PRODUCT_DEVICE := S666LN
 PRODUCT_BRAND := Itel
 PRODUCT_MODEL := Itel S666LN
 PRODUCT_MANUFACTURER := itel
