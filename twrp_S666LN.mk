@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
+DEVICE_PATH := device/itel/S666LN
 # Inherit from Itel-S666LN device
 $(call inherit-product, device/itel/S666LN/device.mk)
 
