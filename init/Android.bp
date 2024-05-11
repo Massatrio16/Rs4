@@ -1,5 +1,5 @@
 cc_library_static {
-    name: "libinit_Itel-S666LN",
+    name: "libinit_S666LN",
     header_libs: [
         "libbase_headers",
     ],
@@ -9,6 +9,6 @@ cc_library_static {
     static_libs: [
         "libbase",
     ],
-    srcs: ["init_Itel-S666LN.cpp"],
+    srcs: ["init_S666LN.cpp"],
     recovery_available: true,
 }
