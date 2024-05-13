@@ -1,4 +1,4 @@
-
+LOCAL_PATH := device/itel/S666LN
 TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/recovery/root/lib/modules)\")
 
 ENABLE_VIRTUAL_AB := true
