@@ -6,9 +6,7 @@
 
 DEVICE_PATH := device/itel/S666LN
 
-TARGET_RECOVERY_DEVICE_DIRS := \
-    $(COMMON_PATH) \
-    $(DEVICE_PATH)
+
 
 # Architecture
 TARGET_ARCH := arm64
