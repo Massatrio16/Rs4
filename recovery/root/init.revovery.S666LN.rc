@@ -14,25 +14,21 @@ on fs && property:ro.debuggable=0
 
 on fs
     install_keyring
-    wait /dev/block/platform/soc/11270000.ufshci
-    symlink /dev/block/platform/soc/11270000.ufshci /dev/block/bootdevice
+   # wait /dev/block/platform/soc/11270000.ufshci
+   # symlink /dev/block/platform/soc/11270000.ufshci /dev/block/bootdevice
 
 # We need vold early for metadata encryption
-on early-fs
-    start vold
+#on early-fs
+  #  start vold
 
 on late-fs
     # Mount RW partitions which need run fsck
-    mount_all /first_stage_ramdisk/fstab.mt6789 --late
+ #   mount_all /first_stage_ramdisk/fstab.mt6789 --late
 
 on post-fs
-    start boot-hal-1-2
-
     symlink /dev/block/mapper/pl_a /dev/block/by-name/preloader_raw_a
     symlink /dev/block/mapper/pl_b /dev/block/by-name/preloader_raw_b
 
-on boot
-    start mtk.plpath.utils.link
 
 on property:persist.vendor.mtk.pl_lnk=1
     symlink /dev/block/mapper/pl_a /dev/block/by-name/preloader_raw_a
@@ -123,4 +119,6 @@ on post-fs-data
     setprop sys.usb.config adb
 
 on boot
+    start mtk.plpath.utils.link
+start boot-hal-1-2
 start vendor.keymint-trustonic
